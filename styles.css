@@ -7,7 +7,9 @@
     --red: #e50914;
     --hover: #f5252f;
     --white: #fff;
+    --black: #000;
     --grey: #171717;
+    --dark-grey: #222;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -152,4 +154,45 @@ table {
 
 .header__form--button:hover, .nav__items--button:hover {
     background-color: var(--hover);
+}
+
+.main {
+    width: 100%;
+    background-color: var(--black);
+}
+
+.main__tv {
+    width: 100%;
+    height: 48vh;
+    border-top: 12px solid var(--dark-grey);
+    border-bottom: 12px solid var(--dark-grey);
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main__tv--article {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tv__article--title {
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0 0 2rem 0;
+}
+
+.tv__article--text {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
 }
