@@ -3,6 +3,13 @@
    License: none (public domain)
 */
 
+:root {
+    --red: #e50914;
+    --hover: #f5252f;
+    --white: #fff;
+    --grey: #171717;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,6 +29,7 @@ time, mark, audio, video {
     font-family: "Martel Sans";
     font-size: 100%;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -44,4 +52,104 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__nav {
+    width: 100%;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav__logo--image {
+    width: 15rem;
+}
+
+.nav__items--select, .nav__items--button {
+    padding: .8rem 1.8rem;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: .3rem;
+    cursor: pointer;
+    outline: none;
+    color: var(--white);
+}
+
+.nav__items--select {
+    border: 1px solid var(--white);
+    background: transparent;
+    width: 11rem;
+}
+
+.nav__items--select option {
+    background-color: var(--grey);
+}
+
+.nav__items--button {
+    background-color: var(--red);
+    font-size: 1.4rem;
+}
+
+.header__title, .header__text {
+    width: 50%;
+    color: var(--white);
+    text-align: center;
+    font-weight: 700;
+}
+
+.header__title {
+    font-size: 5rem;
+    line-height: 6rem;
+    margin: 15rem auto 2rem auto;
+}
+
+.header__text {
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+.header__form {
+    width: 40%;
+    margin: 4rem auto;
+    justify-content: center;
+}
+
+.header__form--label {
+    display: block;
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 auto 1rem auto;
+}
+
+.header__form--input {
+    width: 75%;
+    padding: 2.2rem 1rem;
+    border: none;
+    outline: none
+}
+
+.header__form--button {
+    width: 20%;
+    padding: 2rem 1rem;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.header__form--button:hover, .nav__items--button:hover {
+    background-color: var(--hover);
 }

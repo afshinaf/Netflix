@@ -10,6 +10,27 @@
         <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <header class="header">
+            <nav class="header__nav">
+                <div class="header__nav--logo">
+                    <img src="./images/logo.svg" alt="Netflix Logo" class="nav__logo--image"/>
+                </div>
+                <div class="header__nav--items">
+                    <select class="nav__items--select">
+                        <option> English </option>
+                        <option> Persian </option>
+                    </select>
+                    <button class="nav__items--button"> Sign In </button>
+                </div>
+            </nav>
+            <h1 class="header__title"> Unlimited films, TV <br/> programmes and more. </h1>
+            <h4 class="header__text"> Watch anywhere. Cancel at any time. </h4>
+            <form class="header__form">
+                <label class="header__form--label"> Ready to watch? Enter your email to create or restart your membership. </label>
+                <input type="email" class="header__form--input"  placeholder="Email address" required />
+                <button class="header__form--button"> Get Started </button>
+            </form>
+        </header>
 
     <script type="text/javascript" src="./index.js"></script>
     </body>
