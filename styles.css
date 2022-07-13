@@ -163,7 +163,8 @@ table {
 
 .main__tv,
 .main__app,
-.main__device {
+.main__device,
+.main__children {
     width: 100%;
     height: 48vh;
     border-top: 12px solid var(--dark-grey);
@@ -180,7 +181,8 @@ table {
 
 .main__tv--article,
 .main__app--article,
-.main__device--article {
+.main__device--article,
+.main__children--article {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -189,7 +191,8 @@ table {
 
 .tv__article--title,
 .app__article--title,
-.device__article--title {
+.device__article--title,
+.children__article--title {
     color: var(--white);
     font-size: 4rem;
     font-weight: 800;
@@ -199,7 +202,8 @@ table {
 
 .tv__article--text,
 .app__article--text,
-.device__article--text {
+.device__article--text,
+.children__article--text {
     color: var(--white);
     font-size: 2rem;
     font-weight: 600;
@@ -217,6 +221,7 @@ table {
     left: 95px;
 }
 
-.main__device--figure {
+.main__device--figure,
+.main__children--figure {
     margin-top: 4rem;
 }
