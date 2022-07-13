@@ -3,6 +3,12 @@
    License: none (public domain)
 */
 
+:root {
+    --red: #e50914;
+    --white: #fff;
+    --grey: #171717;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,6 +28,7 @@ time, mark, audio, video {
     font-family: "Martel Sans";
     font-size: 100%;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -44,4 +51,49 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+.header, .header__nav {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__nav {
+    padding: 2rem 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav__logo--image {
+    width: 15rem;
+}
+
+.nav__items--select, .nav__items--button {
+    padding: .8rem 1.8rem;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: .3rem;
+    cursor: pointer;
+    outline: none;
+    color: var(--white);
+}
+
+.nav__items--select {
+    border: 1px solid var(--white);
+    background: transparent;
+    width: 11rem;
+}
+
+.nav__items--select option {
+    background-color: var(--grey);
+}
+
+.nav__items--button {
+    background-color: var(--red);
+    font-size: 1.4rem;
 }
