@@ -161,11 +161,10 @@ table {
     background-color: var(--black);
 }
 
-.main__tv {
+.main__tv, .main__app {
     width: 100%;
     height: 48vh;
     border-top: 12px solid var(--dark-grey);
-    border-bottom: 12px solid var(--dark-grey);
 }
 
 .container {
@@ -176,21 +175,25 @@ table {
     justify-content: space-between;
 }
 
-.main__tv--article {
+.main__tv--article,
+.main__app--article {
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.tv__article--title {
+.tv__article--title,
+.app__article--title {
     color: var(--white);
     font-size: 4rem;
     font-weight: 800;
     margin: 0 0 2rem 0;
+    line-height: 4.5rem;
 }
 
-.tv__article--text {
+.tv__article--text,
+.app__article--text {
     color: var(--white);
     font-size: 2rem;
     font-weight: 600;
