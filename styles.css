@@ -248,10 +248,10 @@ table {
 
 .faq__question--item {
     width: 70%;
-    height: 7rem;
+    height: auto;
     background-color: #303030;
     margin: 0 auto 1rem auto;
-    padding: 0 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -273,8 +273,20 @@ table {
 }
 
 .faq__question--text {
+    width: 100%;
+    height: 100%;
     color: var(--white);
+    font-size: 1.5rem;
+    border-top: 1px solid var(--white);
+    text-align: start;
+    line-height: 2.5rem;
+    margin: .8rem 0;
+    padding: 1rem 0;
     display: none;
+}
+
+.show {
+    display: block;
 }
 
 .faq__question--title button {
